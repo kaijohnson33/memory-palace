@@ -19,6 +19,7 @@ public class AwaitOperator
         Console.WriteLine($"{nameof(DownloadDocsMainPageAsync)}: About to start downloading.");
 
         var client = new HttpClient();
+        // Better to await Task.Delay(900)
         Thread.Sleep(900);
         // All of this up to here executes before giving control back to Main()
         byte[] content = await client.GetByteArrayAsync("https://docs.microsoft.com/en-us/");
