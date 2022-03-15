@@ -94,3 +94,16 @@ Attribute name in brackets, is actually suffixed by Attribute (DllImportAttribut
 
 https://docs.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-3.1&tabs=macos
 
+## Dependency Injection
+
+https://www.c-sharpcorner.com/article/understanding-addtransient-vs-addscoped-vs-addsingleton-in-asp-net-core/
+
+- Transient - created each time they are requested; good for lightweight stateless services
+- Scoped: Once per request
+- Singleton: created once
+
+## Logging
+
+Providers store logs (Console displays).
+
+- Host is created in Program.cs
